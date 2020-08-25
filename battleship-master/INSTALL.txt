@@ -1,17 +1,12 @@
-Just as in the Adventure assingment, use "make build" to build our system and
-use "make play" in the terminal to start the game. 
-Once the game starts you can
-choose the game mode to play and the difficulty of the AI if you wish.
-After the game begins, use "place 'start_block' 'end_block'" to place a 
-ship. An example of this is "place A1 A4" which places a ship from A1 to A4, of
-length 4. The ship list is printed above each turn with the ships you still must
-place and their lengths. 
-After you place all your ships it will switch to the next player, either a human
-or the AI and they will place their ships.
-After all ships are placed for both players, you will take turns guessing at 
-spots on your opponent's board using "try 'block'" until one player sinks all 
-the ships of their opponent, and thus wins the game.
-You can also use a 'rules' command to print the rules of the game and a
-'score' command to get your score, which is the current number of ships you have
-sunk.
+Use "make build" to build our system and use "make play" in the terminal to start the game. 
+Once the game starts you can choose the game mode to play and the difficulty of the AI if you wish.
+After the game begins, use "place 'start_block' 'end_block'" to place a ship. 
+An example of this is "place A1 A4" which places a ship from A1 to A4, of length 4. 
+The ship list is printed above each turn with the ships you still must place and their lengths. 
+After you place all your ships it will switch to the next player, either a human or the AI and they will place their ships.
+After all ships are placed for both players, you will take turns guessing at spots on your opponent's board using "try 'block'" 
+until one player sinks all the ships of their opponent, and thus wins the game. An example of this is "try A4" which will attempt
+to hit an opponent's ship on block A4.
+You can also use a "rules" command to print the rules of the game and a "score" command to get your score, 
+which is the current number of ships you have sunk.
 To quit the game, type "quit".
