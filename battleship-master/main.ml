@@ -679,7 +679,7 @@ and place_medium_block bl size_list =
 (** [main ()] prompts for the game to play, then starts it. *)
 let rec main () : unit =
   ANSITerminal.(print_string [yellow] 
-                  ("Welcome to Battleship! Would you like to" ^ 
+                  ("Welcome to Battleship! Would you like to " ^ 
                    "play a two-player game or against an AI?\n"));
   ANSITerminal.(print_string [yellow] "Input 1 for a two-player game.\n");
   ANSITerminal.(print_string [yellow] "Input 2 for an AI:\n");
@@ -689,8 +689,8 @@ let rec main () : unit =
   | "1" ->
     ANSITerminal.(print_string [yellow] "You have chosen a two player game! \n");
     ANSITerminal.(print_string [yellow] 
-                    ("Please place your ships using the" ^ 
-                     "'place' command (ex: 'place A1 A3') or use the" ^  
+                    ("Please place your ships using the " ^ 
+                     "'place' command (ex: 'place A1 A3') or use the " ^  
                      "'rules' command to learn the rules of the game\n \n"));
     play_loop state
   | "2" -> choose_ai state
@@ -698,8 +698,8 @@ let rec main () : unit =
                          ("Invalid input, You have defaulted " ^ 
                           "to a two player game.\n")); 
     ANSITerminal.(print_string [yellow]           
-                    ("Please place your ships using the" ^ 
-                     "'place' command (ex: 'place A1 A3') or use the" ^  
+                    ("Please place your ships using the " ^ 
+                     "'place' command (ex: 'place A1 A3') or use the " ^  
                      "'rules' command to learn the rules of the game\n \n"));
     play_loop state
 
@@ -713,16 +713,16 @@ and choose_ai state =
   | "easy" ->
     ANSITerminal.(print_string [yellow] "You have chosen an easy AI! \n");
     ANSITerminal.(print_string [yellow] 
-                    ("Please place your ships using the" ^ 
-                     "'place' command (ex: 'place A1 A3') or use the" ^  
+                    ("Please place your ships using the " ^ 
+                     "'place' command (ex: 'place A1 A3') or use the " ^  
                      "'rules' command to learn the rules of the game\n \n"));
     Random.self_init ();
     play_AI state all_blocks
   | "medium" ->
     ANSITerminal.(print_string [yellow] "You have chosen a medium AI! \n");
     ANSITerminal.(print_string [yellow] 
-                    ("Please place your ships using the" ^ 
-                     "'place' command (ex: 'place A1 A3') or use the" ^  
+                    ("Please place your ships using the " ^ 
+                     "'place' command (ex: 'place A1 A3') or use the " ^  
                      "'rules' command to learn the rules of the game\n \n"));
     Random.self_init ();
     play_medium_AI state all_blocks ('P', 1)
@@ -731,8 +731,8 @@ and choose_ai state =
                     ("Invalid input, You have defaulted " ^ 
                      "to an easy AI.\n")); 
     ANSITerminal.(print_string [yellow]           
-                    ("Please place your ships using the" ^ 
-                     "'place' command (ex: 'place A1 A3') or use the" ^  
+                    ("Please place your ships using the " ^ 
+                     "'place' command (ex: 'place A1 A3') or use the " ^  
                      "'rules' command to learn the rules of the game\n \n"));
     play_AI state all_blocks
 
